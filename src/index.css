@@ -1,0 +1,434 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffaf6;
+  color: #444;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #754b42;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ENCABEZADO Y NAVEGACIÓN */
+
+nav {
+  background-color: #e8a18d;
+  padding: 18px;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 18px;
+  padding: 8px;
+}
+
+nav a:hover {
+  color: #754b42;
+}
+
+/* PÁGINA DE INICIO */
+
+.inicio {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.inicio h1 {
+  margin-bottom: 15px;
+}
+
+.inicio p {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.titulo-destacados {
+  text-align: center;
+  margin: 35px 0 10px;
+}
+
+.subtitulo-destacados {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.grid-tarjetas-inicio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+.tarjeta {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.tarjeta h3 {
+  margin: 15px 10px 8px;
+}
+
+.tarjeta p {
+  padding: 0 15px;
+}
+
+.tarjeta a {
+  display: inline-block;
+  margin: 12px;
+  padding: 10px 18px;
+  background-color: #e88b75;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.tarjeta a:hover {
+  background-color: #d66f5b;
+}
+
+/* CATÁLOGO DE MASCOTAS */
+
+.catalogo-bienvenida {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.catalogo-bienvenida h2 {
+  margin-bottom: 15px;
+}
+
+.catalogo-bienvenida h1 {
+  margin-bottom: 15px;
+}
+
+.catalogo-bienvenida h3 {
+  margin-bottom: 12px;
+}
+
+.catalogo-bienvenida p {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.filtros-mascotas {
+  padding: 20px;
+  text-align: center;
+}
+
+.filtros-mascotas h2 {
+  margin-bottom: 20px;
+}
+
+.filtros-contenido {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+.filtro {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 160px;
+  text-align: left;
+}
+
+.filtro label {
+  font-weight: bold;
+  color: #754b42;
+}
+
+.filtro select {
+  padding: 10px;
+  border: 1px solid #d5b6a9;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 15px;
+}
+
+.cantidad-mascotas {
+  text-align: center;
+  margin: 25px 0;
+  font-weight: bold;
+  color: #754b42;
+}
+
+.grid-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+.tarjeta-mascota {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s;
+}
+
+.tarjeta-mascota:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-mascota img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.contenido-mascota {
+  padding: 18px;
+  text-align: center;
+}
+
+.contenido-mascota h3 {
+  margin: 5px 0 12px;
+}
+
+.contenido-mascota p {
+  margin: 8px 0;
+}
+
+.datos-mascota {
+  color: #a16d5d;
+  font-weight: bold;
+}
+
+.personalidad-mascota {
+  min-height: 75px;
+}
+
+.boton-adoptar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 16px;
+  background-color: #e88b75;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.boton-adoptar:hover {
+  background-color: #d66f5b;
+}
+
+.sin-resultados {
+  text-align: center;
+  padding: 25px;
+  grid-column: 1 / -1;
+}
+
+/* FORMULARIO Y CONTACTO */
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 0.85fr;
+  gap: 20px;
+  align-items: start;
+  width: 90%;
+  max-width: 1050px;
+  margin: 30px auto;
+}
+
+.form-contacto {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 0;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.form-contacto h3 {
+  margin: 0 0 30px;
+  padding-bottom: 15px;
+  color: #4b6043;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 1.35rem;
+}
+
+.form-contacto .form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+  width: 100%;
+}
+
+.form-contacto .form-grupo label {
+  display: block;
+  margin-bottom: 2px;
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-contacto .form-grupo input,
+.form-contacto .form-grupo textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 14px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: inherit;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.form-contacto .form-grupo input:focus,
+.form-contacto .form-grupo textarea:focus {
+  outline: none;
+  border-color: #789568;
+  box-shadow: 0 0 0 3px rgba(120, 149, 104, 0.15);
+  background-color: #ffffff;
+}
+
+.form-contacto .form-grupo textarea {
+  min-height: 130px;
+  resize: none;
+  overflow: hidden;
+}
+
+.form-contacto .btn-submit {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #668653;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-contacto .btn-submit:hover {
+  background-color: #4b683b;
+}
+
+/* MAPA DE UBICACIÓN */
+
+.mapa-container {
+  width: 100%;
+  min-width: 0;
+}
+
+.mapa-container h3 {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.mapa-container iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+  background-color: #754b42;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  margin-top: 35px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+/* ADAPTACIÓN PARA TABLETS Y CELULARES */
+
+@media (max-width: 768px) {
+  .grid-tarjetas,
+  .grid-tarjetas-inicio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav a {
+    margin: 5px;
+  }
+
+  .contacto-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .form-contacto {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-tarjetas,
+  .grid-tarjetas-inicio {
+    grid-template-columns: 1fr;
+  }
+
+  .contenedor {
+    padding: 10px;
+  }
+
+  .filtros-contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filtro {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .form-contacto h3 {
+    font-size: 1.15rem;
+  }
+}
