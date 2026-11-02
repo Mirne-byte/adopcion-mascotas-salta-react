@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.49cf5cad.css",
-    "main.js": "/static/js/main.bf9b8c9e.js",
-    "index.html": "/index.html",
-    "main.49cf5cad.css.map": "/static/css/main.49cf5cad.css.map",
-    "main.bf9b8c9e.js.map": "/static/js/main.bf9b8c9e.js.map"
+    "main.css": "/adopcion-mascotas-salta-react/static/css/main.49cf5cad.css",
+    "main.js": "/adopcion-mascotas-salta-react/static/js/main.621038af.js",
+    "index.html": "/adopcion-mascotas-salta-react/index.html",
+    "main.49cf5cad.css.map": "/adopcion-mascotas-salta-react/static/css/main.49cf5cad.css.map",
+    "main.621038af.js.map": "/adopcion-mascotas-salta-react/static/js/main.621038af.js.map"
   },
   "entrypoints": [
     "static/css/main.49cf5cad.css",
-    "static/js/main.bf9b8c9e.js"
+    "static/js/main.621038af.js"
   ]
 }

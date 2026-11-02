@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Encabezado from './Componentes/Encabezado';
@@ -8,7 +9,7 @@ import NoExiste from './Paginas/NoExiste';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/adopcion-mascotas-salta-react">
       <Encabezado />
       <Routes>
         <Route path="/" element={<Inicio />} />
